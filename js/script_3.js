@@ -56,8 +56,8 @@ avgWeight = 0;
 avgLenght = 0;
 for (let i = 0; i<zucchini.length; i++){
     sum += zucchini[i].weight;
-    avgWeight += zucchini[i].weight / 10;
-    avgLenght += zucchini[i].length / 10;
+    avgWeight += zucchini[i].weight / zucchini.length;
+    avgLenght += zucchini[i].length / zucchini.length;
 
 
 }
