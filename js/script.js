@@ -37,6 +37,7 @@ for (let i = 0; i < studentsList.length; i++ ){
     for (let key in students) {
         console.log(key)
         console.log(studentsList[i][key])
+        console.log(studentsList[i])
     
     }
 }
