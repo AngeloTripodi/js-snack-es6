@@ -16,7 +16,7 @@ const carsList = [
     },
     {
         brand : "Jaguar",
-        model : "Jaguarosa",
+        model : "Jaguarina",
         supply : "Gpl"
     },
     {
@@ -49,5 +49,30 @@ const carsList = [
         model : "Huracan",
         supply : "Elettrico"
     }
-]
+];
+
+const car = {
+    brand : "ferrari",
+    model : "f-10",
+    supply : "Benzina"
+}
+
+
+
+   
+
+let dieselCars = []
+let benzinaCars = []
+let otherCars = []
+
+for (let i=0; i<carsList.length; i++){
+   if (carsList[i].supply ==='Benzina'){
+    benzinaCars.push(carsList[i])
+   }
+   else if (carsList[i].supply ==='Diesel'){
+    dieselCars.push(carsList[i])
+   }
+}
+
+console.log(benzinaCars, dieselCars)
 
