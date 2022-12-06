@@ -19,4 +19,10 @@ const listaMammiferi = animali.filter((tipo) => {
     }
 });
 
+const nameToUppercase = animali.map((name) => {
+    return name.nome.charAt(0) + name.nome.substring(1).toUpperCase()
+});
+
+console.log(nameToUppercase)
+
 console.log(listaMammiferi);
