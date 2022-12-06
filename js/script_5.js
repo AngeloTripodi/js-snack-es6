@@ -11,3 +11,13 @@ const persone = [
     { nome: 'marco', cognome: 'marchi', eta: 17 }
 ]
 
+const puoGuidare = persone.map((tizio) => {
+    if (tizio.eta >= 18){
+        return tizio.nome +" "+ tizio.cognome + " " + 'può guidare!';
+    
+    } else {
+        return 'è minorenne e non può guidare :(';
+    }
+}); 
+
+console.log (puoGuidare);
