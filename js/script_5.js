@@ -16,7 +16,7 @@ const puoGuidare = persone.map((tizio) => {
         return tizio.nome +" "+ tizio.cognome + " " + 'può guidare!';
     
     } else {
-        return 'è minorenne e non può guidare :(';
+        return tizio.nome +" "+ tizio.cognome + " " + 'è minorenne e non può guidare :(';
     }
 }); 
 
